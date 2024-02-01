@@ -8,6 +8,7 @@ import { AppComponent } from './app.component'
 import { HomepageComponent } from './components/homepage/homepage.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { JukeboxOverlayComponent } from './components/jukebox-overlay/jukebox-overlay.component'
+import { MatGridListModule } from '@angular/material/grid-list'
 
 @NgModule({
   declarations: [AppComponent, HomepageComponent, JukeboxOverlayComponent],
@@ -18,6 +19,7 @@ import { JukeboxOverlayComponent } from './components/jukebox-overlay/jukebox-ov
     MatCardModule,
     MatButtonModule,
     HttpClientModule,
+    MatGridListModule, // <-- Here
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,58 @@
+.overlay {
+  display: grid;
+  grid-template-areas:
+    'area1 area2 area3'
+    'area4 area5 area6 area7';
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+button {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Holtwood One SC', serif;
+  font-size: 1rem;
+  transition: color 0.3s;
+  padding: 1.25rem;
+  box-shadow: 2px 2px 8px 1px rgba(239, 131, 35, 0.5);
+  color: rgb(67, 31, 0) !important;
+  &:hover {
+    color: rgb(255, 215, 64) !important;
+    box-shadow: rgb(255, 215, 64) 2px 2px 8px 1px;
+    background-color: rgb(87, 36, 27) !important;
+  }
+}
+
+@media (max-width: 890px) {
+    .overlay {
+        grid-template-areas:
+          'area1 area2'
+          'area3 area4'
+          'area5 area6'
+          'area7 area7';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
+  }
+
+  @media (max-width: 575px) {
+    .overlay {
+      grid-template-areas:
+        'area1'
+        'area2'
+        'area3'
+        'area4'
+        'area5'
+        'area6'
+        'area7';
+      grid-template-columns: 1fr;
+    }
+    button {
+    font-size: 1.25rem;
+    width: 90vw;
+    } 
+  }

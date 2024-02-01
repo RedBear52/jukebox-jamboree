@@ -5,27 +5,31 @@ mat-card {
 mat-card mat-card-content {
   display: flex;
   justify-content: center;
-  background-image: url("/../assets/textures-wood.jpeg");
+  background-image: url('/../assets/textures-wood.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: saturation;
-  background-color: rgba(90, 42, 12, 0.5);
+  background-color: rgba(90, 24, 12, 0.5);
   border-radius: 8px;
+  padding: 2rem;
 }
 
 h1 {
-  font-family: "Holtwood One SC", serif;
-  color: white;
+  font-family: 'Holtwood One SC', serif;
+  color: rgba(255, 215, 64, 0.9);
   font-size: 1.75rem;
   background-color: rgba(90, 42, 12, 0.5);
-} 
+}
 
 .title {
-  background-image: url("/../assets/textures-wood.jpeg");
+  left: 0;
+  top: 0;
+  background-image: url('/../assets/textures-wood.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: saturation;
   border-radius: 8px;
+  text-align: center;
 }
 
 video {
@@ -33,4 +37,5 @@ video {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+  box-shadow: rgba(90, 42, 12, 0.5) 2px 2px 8px 4px;
 }

@@ -3,10 +3,7 @@ import { RouterModule, Routes } from '@angular/router'
 import { HomepageComponent } from './components/homepage/homepage.component'
 import { JukeboxOverlayComponent } from './components/jukebox-overlay/jukebox-overlay.component'
 
-const routes: Routes = [
-  { path: '', component: HomepageComponent },
-  { path: 'jukebox', component: JukeboxOverlayComponent },
-]
+const routes: Routes = [{ path: '', component: HomepageComponent }]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

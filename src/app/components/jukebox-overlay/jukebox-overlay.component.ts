@@ -20,10 +20,3 @@ export class JukeboxOverlayComponent {
   }
 }
 
-// ngOnInit() {
-//   this.jukeboxService.getVideoLinks().subscribe((videoLinks) => {
-//     console.log(this.videoLinks);
-
-//     this.videoLinks = videoLinks;
-//   });
-// }
